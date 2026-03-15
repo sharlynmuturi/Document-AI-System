@@ -113,7 +113,7 @@ else:
         ],
         use_container_width=True
     )
-    
+
 st.markdown("---")
 
 # Display fields
@@ -136,7 +136,7 @@ st.dataframe(
 
 
 # RAG QUESTION INTERFACE
-st.header(f"Ask Questions About {selected_type.title()} Documents")
+st.subheader(f"Ask AI About {selected_type.title()} Documents")
 
 question = st.text_input(
     "Ask a question:",
@@ -144,7 +144,7 @@ question = st.text_input(
 )
 
 
-if st.button("Ask LLM"):
+if st.button("Ask"):
 
     if question.strip() == "":
         st.warning("Please enter a question.")
