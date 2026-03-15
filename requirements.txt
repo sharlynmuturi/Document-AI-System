@@ -1,3 +1,13 @@
+langchain
+langchain-community
+chromadb
+sentence-transformers
+groq
+pandas
+langchain-chroma>=0.1.2
+langchain-huggingface
+streamlit
+
 pytesseract
 pdf2image 
 opencv-python 
@@ -13,12 +23,3 @@ xlsxwriter
 openpyxl
 
 
-langchain
-langchain-community
-chromadb
-sentence-transformers
-groq
-pandas
-langchain-chroma>=0.1.2
-langchain-huggingface
-streamlit

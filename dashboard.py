@@ -89,24 +89,6 @@ def highlight_confidence(row):
     return ["background-color: {}".format(color)] * len(row)
 
 
-# Display fields
-st.subheader(
-    f"{selected_type.title()} Fields for: {selected_doc}"
-    if selected_doc != "All"
-    else f"All {selected_type.title()} Documents"
-)
-
-st.write(f"Total records: {len(df_doc)}")
-
-st.dataframe(
-    df_doc[
-        ["filename", "field_name", "field_value", "confidence", "source"]
-    ].style.apply(highlight_confidence, axis=1),
-    use_container_width=True
-)
-
-
-
 # Confidence summary
 st.markdown("---")
 st.subheader("Confidence Summary")
@@ -132,6 +114,25 @@ else:
         ],
         use_container_width=True
     )
+
+
+# Display fields
+st.subheader(
+    f"{selected_type.title()} Fields for: {selected_doc}"
+    if selected_doc != "All"
+    else f"All {selected_type.title()} Documents"
+)
+
+st.write(f"Total records: {len(df_doc)}")
+
+st.dataframe(
+    df_doc[
+        ["filename", "field_name", "field_value", "confidence", "source"]
+    ].style.apply(highlight_confidence, axis=1),
+    use_container_width=True
+)
+
+
 
 
 # RAG QUESTION INTERFACE
