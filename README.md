@@ -135,7 +135,7 @@ Create a .env file in the root directory:
 
 Groq Link: [https://console.groq.com]
 
-Hugging Face Tokens: [https://huggingface.co/settings/tokens]
+Hugging Face Tokens: [https://huggingface.co/settings/tokens]. Create a token and select read permissions. The token helps avoid slow downloads and get higher rate limits.
 
 ```bash
 GROQ_API_KEY=your_groq_api_key_here # for accessing the Groq LLM.

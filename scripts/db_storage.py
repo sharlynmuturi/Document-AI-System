@@ -9,9 +9,9 @@ Stores:
 
 import sqlite3
 from datetime import datetime
+from pathlib import Path
 
-DB_PATH = "document_ai.db"
-
+DB_PATH = Path(__file__).parent / "document_ai.db"
 
 # Connection
 def get_connection():

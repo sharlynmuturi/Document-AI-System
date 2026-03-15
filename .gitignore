@@ -209,4 +209,4 @@ __marimo__/
 # MLflow / SQLite DBs
 mlruns/
 mlflow.db
-document_ai.db
+
