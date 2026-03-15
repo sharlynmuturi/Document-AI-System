@@ -1,0 +1,22 @@
+{
+  "invoice": {
+    "invoice_number": "(?i)(?:invoice\\s*#?\\s*|order\\s*id\\s*[:\\-]?\\s*)([A-Z0-9\\-]+)",
+    "date": "(?i)date[:\\s]*([A-Za-z]{3,}\\s\\d{1,2}\\s\\d{4})",
+    "total_amount": "(?i)(?:total|balance due)[:\\s]*\\$?(\\d+(?:,\\d{3})*(?:\\.\\d{2})?)",
+    "terms": "(?i)terms[:\\s]*([^\n]+)"
+  },
+
+  "resume": {
+    "title": "(?i)(?:^|\\n)([A-Z][a-z]+(?:\\s[A-Z][a-z]+)*\\s*(?:Engineer|Manager|Analyst|Developer|Specialist|Consultant|Officer|Intern)\\b)",
+    "skills": "(?i)(?:Skills|Technical Skills|Key Skills)\\s*[:\\-]?\\s*(?:\\n)?([\\s\\S]*?)(?=\\n[A-Z]|\\nExperience|\\nEducation|\\nProfile|$)",
+    "work_history": "(?i)(?:Work History|Experience|Professional Experience|Employment History)\\s*[:\\-]?\\s*(?:\\n)?([\\s\\S]*?)(?=\\nEducation|\\nSkills|\\nAccomplishments|$)",
+    "education": "(?i)(?:Education|Academic Background|Qualifications)\\s*[:\\-]?\\s*(?:\\n)?([\\s\\S]*?)(?=\\nExperience|\\nSkills|\\nAccomplishments|$)",
+    "accomplishments": "(?i)(?:Accomplishments|Achievements|Profile|Executive Profile|Summary)\\s*[:\\-]?\\s*(?:\\n)?([\\s\\S]*$)"
+  },
+
+  "contract": {
+    "contract_id": "Contract\\s*#:\\s*([A-Z0-9\\-]+)",
+    "effective_date": "Effective Date:\\s*(\\d{2}/\\d{2}/\\d{4})",
+    "party_name": "Between:\\s*(.*?)(?:and|$)"
+  }
+}
