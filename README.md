@@ -9,7 +9,7 @@ The system integrates **OCR, Regex extraction, SQLite, ChromaDB, Groq LLM (Llama
 
 # Project Overview
 
-Processing invoices manually is tedious and error-prone. This system automates:
+Processing documents manually is tedious and error-prone. This system automates:
 
 1. Converting PDFs/images into machine-readable text (OCR).
 2. Extracting structured fields via regex or configurable rules for any document type.
