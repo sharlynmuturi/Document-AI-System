@@ -90,7 +90,6 @@ def highlight_confidence(row):
 
 
 # Confidence summary
-st.markdown("---")
 st.subheader("Confidence Summary")
 
 avg_conf = df_doc["confidence"].mean()
@@ -114,7 +113,8 @@ else:
         ],
         use_container_width=True
     )
-
+    
+st.markdown("---")
 
 # Display fields
 st.subheader(
@@ -136,7 +136,6 @@ st.dataframe(
 
 
 # RAG QUESTION INTERFACE
-st.markdown("---")
 st.header(f"Ask Questions About {selected_type.title()} Documents")
 
 question = st.text_input(
