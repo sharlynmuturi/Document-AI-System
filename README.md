@@ -16,7 +16,7 @@ Processing documents manually is tedious and error-prone. This system automates:
 3. Storing data in SQLite for easy retrieval.
 4. Exporting structured data to Excel for reporting.
 5. Indexing documents into ChromaDB embeddings for semantic search.
-6. Answering user questions with RAG + Groq LLM.
+6. Answering user questions with RAG & Groq LLM.
 7. Providing an interactive Streamlit dashboard to view and query documents.
 
 
@@ -80,7 +80,7 @@ Workflow: OCR → Regex extraction → SQLite → Excel → RAG indexing → log
 6. rag_engine.py – RAG embedding & retrieval engine
 Handles text chunking, embeddings, and LLM question answering.
 
-7. query_engine.py – High-level RAG interface for dashboards or APIs.
+7. query_engine.py – High-level RAG interface for dashboards and APIs.
 
 8. run_pipeline.py – Batch processor
 
@@ -177,7 +177,4 @@ streamlit run dashboard.py
 ### Future Improvements
 
 - Support more document types via JSON patterns.
-- Multi-page documents with attachments.
-- User feedback loop to improve low-confidence extraction.
-- Summarize data across multiple documents.
 - Upload documents via Streamlit UI.
