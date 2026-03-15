@@ -12,7 +12,7 @@ The system integrates **OCR, Regex extraction, SQLite, ChromaDB, Groq LLM (Llama
 Processing documents manually is tedious and error-prone. This system automates:
 
 1. Converting PDFs/images into machine-readable text (OCR).
-2. Extracting structured fields via regex or configurable rules for any document type.
+2. Extracting structured fields via regex with configurable rules.
 3. Storing data in SQLite for easy retrieval.
 4. Exporting structured data to Excel for reporting.
 5. Indexing documents into ChromaDB embeddings for semantic search.
