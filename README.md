@@ -111,7 +111,7 @@ query_engine.py → uses rag_engine.py → answers questions (Streamlit)
 ### Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/Document-AI-System.git
+git clone https://github.com/sharlynmuturi/Document-AI-System.git
 cd Document-AI-System
 ```
 
